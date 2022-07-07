@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@100&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* General Common Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: normal 16px sans-serif;
+    color: #555;
+    scroll-behavior: smooth !important;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #2196f3;
+    font-weight: 800;
+    text-align: center;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin-bottom: 80px;
+}
+/* Section nombres */
+ .oso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 100px;
+    background: #2196f3;
+
+}
+ .alo{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 200px 100px;
+     background: #848484;
+
+ }
+ .alo nav li a{
+     color: aqua;
+ }
+/* Section Common Styles */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 100px;
+
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 80px 30px;
+    }
+}
+
+section h3 {
+    color: #414a4f;
+    text-transform: capitalize;
+    font: bold 32px 'Roboto Light';
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
