@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@100;400;500&family=Open+Sans:wght@300&family=Outfit:wght@100;200&family=Roboto+Slab:wght@100&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 
@@ -11,13 +12,18 @@
 }
 
 html {
-    font: normal 16px "Roboto Light";
-    color: #555;
+    font: normal 16px "Outfit";
+    color: #121114;
     scroll-behavior: smooth !important;
 }
 p{
-    font-family: "Roboto Thin";
-    color:#848484;
+    font-family: "Hepta Slab" ;
+
+
+
+}
+h4{
+    font-family: "Outfit" ;
 }
 
 ul, nav {
@@ -75,9 +81,10 @@ section {
 }
 
 section h3.title {
+
     color: #414a4f;
     text-transform: capitalize;
-    font: bold 32px 'Roboto+Condensed';
+    font: bold 32px "Outfit";
     margin-bottom: 35px;
     text-align: center;
 }
@@ -85,6 +92,7 @@ section h3.title {
 section p {
     max-width: 800px;
     text-align: center;
+    font-family: "Hepta Slab" ;
     margin-bottom: 35px;
     padding: 0 20px;
     line-height: 2;
@@ -115,7 +123,7 @@ header {
 
 
 header h2 {
-    font-family: 'Roboto Light', "Roboto Thin";
+    font-family: "Outfit" ;
 }
 
 header nav {
@@ -123,7 +131,8 @@ header nav {
 }
 
 header nav li {
-    margin: 0 15px;
+    margin: 0 30px;
+    font-size: xx-large;
 }
 
 header nav li:first-child {
@@ -146,14 +155,15 @@ header nav li:last-child {
     }
 
     header h2 {
-        margin-bottom: 15px;
+        font-family: "Outfit" ;
+        margin-bottom: 20px;
     }
 }
 
 
-/* Hero Section */
+/* major Section */
 
-.hero {
+.MAJOR {
     position: relative;
     justify-content: center;
     min-height: 100vh;
@@ -162,7 +172,7 @@ header nav li:last-child {
 }
 
 
-.hero .background-image {
+.MAJOR .background-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -173,7 +183,7 @@ header nav li:last-child {
     z-index: -1;
 }
 
-.hero .background-image:after {
+.MAJOR .background-image:after {
     content: '';
     position: absolute;
     top: 0;
@@ -184,35 +194,39 @@ header nav li:last-child {
     opacity: 0.75;
 }
 
-.hero h1 {
-    font: bold 60px "Roboto Thin";
+.MAJOR h1 {
+    font: bold 60px  "Outfit";
     margin-bottom: 40px;
 }
 
-.hero h3 {
-    font: normal 28px "Roboto Thin";
+.MAJOR h3 {
+    font: normal 28px "Outfit";
     margin-bottom: 40px;
+
+
 }
 
-.hero a.btn {
+.MAJOR a.btn {
     padding: 20px 46px;
 }
 
 @media (max-width: 800px) {
 
-    .hero {
+    .MAJOR {
         min-height: 600px;
     }
 
-    .hero h1 {
+    .MAJOR h1 {
         font-size: 48px;
+        font-family: "Outfit" ;
     }
 
-    .hero h3 {
+    .MAJOR h3 {
         font-size: 24px;
+        font-family: "Outfit" ;
     }
 
-    .hero a.btn {
+    .MAJOR a.btn {
         padding: 15px 40px;
     }
 
@@ -248,10 +262,79 @@ header nav li:last-child {
         flex-basis: 100%;
     }
 }
+/*servicio imagenes*/
 
-/* Services Section */
+.figures .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
 
-.services {
+.figures .grid li.small {
+    flex-basis: 40%;
+}
+
+.figures .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 1000px) {
+    .figures .grid li.small,
+    .figures .grid li.larg {
+        flex-basis: 100%;
+    }
+}
+
+/* plans Section */
+
+.plans{
+    background-color: #F7F7F7;
+}
+
+.plans .grid li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.plans .grid li i {
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.plans .grid li h4 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.plans .grid li p {
+    margin: 0;
+    font-family: "Hepta Slab" ;
+}
+.plans ul li p{
+    font-family: "Roboto Thin";
+
+}
+
+@media (max-width: 1000px) {
+    .plans .grid li {
+        flex-basis: 70%;
+        margin-bottom: 65px;
+    }
+    .plans .grid li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* services Section */
+
+.services{
     background-color: #F7F7F7;
 }
 
@@ -269,15 +352,18 @@ header nav li:last-child {
 
 .services .grid li h4 {
     color: #555;
+    font-family: "Outfit" ;
     font-size: 20px;
     margin-bottom: 25px;
 }
 
 .services .grid li p {
+    font-family: "Hepta Slab" ;
     margin: 0;
 }
 .services ul li p{
-    font-family: "Roboto Thin";
+
+    font-family: "Hepta Slab" ;
 
 }
 
@@ -290,46 +376,12 @@ header nav li:last-child {
         margin-bottom: 0;
     }
 }
-
 @media (max-width: 600px) {
     .services .grid li {
         flex-basis: 100%;
     }
 }
 
-/* Reviews Section */
-
-.reviews {
-    background-color: #fff;
-}
-
-.reviews .quote {
-    text-align: center;
-    width: 80%;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    padding: 0;
-}
-
-.reviews .author {
-    font-size: 18px;
-    margin-bottom: 50px;
-}
-
-.reviews .author:last-child {
-    margin-bottom: 0;
-}
-
-@media (max-width: 1000px) {
-    .reviews .quote {
-        font-size: 20px;
-    }
-    .reviews .author {
-        font-size: 16px;
-    }
-}
 
 /* Contact Section */
 
@@ -389,6 +441,7 @@ footer ul li:last-child {
 }
 
 footer p {
+    font-family: "Hepta Slab" ;
     text-transform: uppercase;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6);
